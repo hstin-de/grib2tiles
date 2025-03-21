@@ -140,11 +140,4 @@ func main() {
 		fmt.Fprintf(os.Stderr, "Error: %v\n", err)
 		os.Exit(1)
 	}
-
-	// Start preview server if requested
-	// if cfg.WebServer {
-	// 	fmt.Printf("Starting preview server at http://localhost:%d\n", cfg.ServerPort)
-	// 	fmt.Printf("Press Ctrl+C to stop the server\n")
-	// 	preview.StartServer(cfg)
-	// }
 }
