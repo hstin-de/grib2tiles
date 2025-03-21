@@ -1,0 +1,46 @@
+# Temperature (2m) color mapping configuration
+# Format: value_threshold R G B A
+# Values are processed in order from bottom to top (most specific to least specific)
+# "-inf" represents negative infinity (matches any value lower than the next threshold)
+#
+# Thresholds are temperature values in Kelvin
+# Color components are 0-255 RGBA values
+
+# Extremely cold temperatures (< 223.15K, -50°C)
+-inf 38 88 126 255
+
+# Very cold (223.15K to 233.15K, -50°C to -40°C)
+223.15 38 92 130 255
+
+# Cold (233.15K to 243.15K, -40°C to -30°C)
+233.15 38 96 135 255
+
+# Moderately cold (243.15K to 253.15K, -30°C to -20°C)
+243.15 38 100 140 255
+
+# Cool (253.15K to 263.15K, -20°C to -10°C)
+253.15 54 112 137 255
+
+# Chilly (263.15K to 273.15K, -10°C to -10°C)
+263.15 69 131 137 255
+
+# Freezing point (273.15K, 0°C)
+273.15 84 141 137 255
+
+# Mild (273.15K to 283.15K, 0°C to 10°C)
+273.16 100 153 137 255
+
+# Moderate (283.15K to 293.15K, 10°C to 20°C)
+283.15 131 166 128 255
+
+# Warm (293.15K to 303.15K, 20°C to 30°C)
+293.15 163 179 120 255
+
+# Hot (303.15K to 313.15K, 30°C to 40°C)
+303.15 195 192 111 255
+
+# Very hot (313.15K to 323.15K, 40°C to 50°C)
+313.15 224 177 91 255
+
+# Extremely hot (> 323.15K, > 50°C)
+323.15 217 147 68 255
